@@ -62,6 +62,7 @@ def post_detail(request, id):
     context = {'post': post}
     return render(request, 'blog/detail.html', context)
 
+
 def category_posts(request, category_slug):
     """Отображение публикаций категории."""
     context = {'category': category_slug}
